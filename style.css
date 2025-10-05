@@ -1,0 +1,148 @@
+/* تعليمة التنسيق تشمل كل شيئ*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*  الوان الباك كراوند والثوابت من الجسم */
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: #011330f3;
+    line-height: 3;
+    text-align: center;
+}
+
+
+
+header {
+    background-color: #041f62; 
+    color: rgb(217, 217, 234);
+    padding: 50px 35;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(8, 13, 80, 0.422);
+}
+
+header h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* قائمة التنقل الناف بار */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    text-align: center;
+}
+/*لتغير خلفية الليستا في التاف بار بعد تمرير الفأرة عليها*/
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #152ead9e;
+}
+
+
+
+/*بوكس المحتوى*/
+
+main {
+    max-width:800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.973);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* الجداول */
+/* والتعامل مع خصائص الجدول من الخلايا للاطراف للفواصل بينها لنوع الخط وكل شيئ متعلق بالتنسيق للجدول*/
+.apps-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+}
+
+.apps-table th,
+.apps-table td {
+    padding: 20px;
+    border: 1px solid #0c2346;
+    text-align: center;
+}
+
+.apps-table th {
+    background-color: #0e2355;
+    color: white;
+}
+
+.apps-table tr:nth-child(even) {
+    background-color: #fffefee0;
+}
+
+/*تنسيق الازرار */
+
+button {
+    background-color: #10265a;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #2c3f68;
+}
+
+/* تنسيق كامل الفورم الموجودة*/
+form input,
+form select,
+form textarea {
+    width: 55%;
+    padding: 6px;
+    border: 3px solid #9697af;
+    border-radius: 3px;
+    margin-top: 1%;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 6px;
+}
+
+form button {
+    width: 60%;
+    margin-right: 5%;
+}
+
+/* تنسيق الفوتر*/
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #0a1a3f;
+    color: white;
+    border-top: 1.5px darkblue #1f3566;
+    
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Application - AI Applications_A-S-M-A</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</head>
+<body>
+    <header>
+        <h1> موقع تعريفي بتطبيقات الذكاء الاصطناعي</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="apps.html">Applications</a></li>
+                <li><a href="add_app.html" class="active">Add Application</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>إضافة تطبيق جديد</h2>
+            <form id="appForm">
+                <label for="appName">اسم التطبيق (بالإنكليزية فقط، بدون فراغات):</label><br>
+                <input type="text" id="appName" name="appName" required><br><br>
+
+                <label for="company">اسم الشركة (بالإنكليزية فقط):</label><br>
+                <input type="text" id="company" name="company" required><br><br>
+
+                <label for="website">الموقع الإلكتروني (URL):</label><br>
+                <input type="url" id="website" name="website" required><br><br>
+
+                <label for="free">هل التطبيق مجاني؟</label><br>
+                <select id="free" name="free" required>
+                    <option value="">-- اختر --</option>
+                    <option value="مجاني">مجاني</option>
+                    <option value="غير مجاني">غير مجاني</option>
+                </select><br><br>
+
+                <label for="field">مجال الاستخدام:</label><br>
+                <select id="field" name="field" required>
+                    <option value="">-- اختر --</option>
+                    <option value="Education">Education</option>
+                    <option value="E-Commerce">E-Commerce</option>
+                    <option value="Robotics">Robotics</option>
+                    <option value="Art & Design">Art & Design</option>
+                </select><br><br>
+
+                <label for="description">شرح مختصر:</label><br>
+                <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+                <button type="submit">إرسال</button>
+                <button type="reset">إعادة</button>
+            </form>
+        </section>
+    </main>
+
+
+    <!--فوتر الصفحة ثابت-->
+    <footer>
+         <p>&copy;_______________________________________________________________________2025 AI Application A-S-M-A____________________________________________________________________ </p>
+    </footer>
+
+</body>
+</html>
